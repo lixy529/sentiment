@@ -1,0 +1,12 @@
+# 目录
+bin/
+pkg/
+log/
+.cache/
+.idea/
+
+# 编译文件
+*.[oa]
+
+# idea文件
+*.iml
