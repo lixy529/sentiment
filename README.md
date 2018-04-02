@@ -13,6 +13,7 @@ go get https://github.com/lixy529/sentiment
 
 示例
 -------
+’’’
 dictPath := "./dict"
 mSentiment := NewSentiment(dictPath)
 // 初始化
@@ -35,3 +36,4 @@ if sentiType == S_NEGATIVE {
 
 // 反初始化
 mSentiment.UnInit()
+’’’
