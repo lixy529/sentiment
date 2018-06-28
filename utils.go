@@ -243,7 +243,11 @@ func Curl(urlAddr, data, method string, timeout time.Duration, params ...map[int
 
 	// 设置HEADER
 	for key, val := range headers {
-		req.Header.Set(key, val)
+		if strings.ToLower(key) == "host" {
+			req.Host = val
+		} else {
+			req.Header.Set(key, val)
+		}
 	}
 
 	client := &http.Client{
